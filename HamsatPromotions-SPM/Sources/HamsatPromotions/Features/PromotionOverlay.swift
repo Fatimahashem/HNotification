@@ -35,17 +35,16 @@ public struct PromotionOverlay: View {
                                 .font(Theme.AppFont.dinarMedium(size: 16).font)
                         }
                         .onTapGesture { onSelect(promotion) }
-                        .overlay(alignment: .topLeading) {
-                            if let timer = viewModel.formattedRemainingTime {
-                                CountdownBadge(value: timer, locale: locale)
-                                    .offset(x: -24, y: -32)
-                            }
-                        }
                     }
-
                     ModalCloseButton(locale: locale, action: viewModel.dismiss)
                 }
                 .padding(16)
+                .overlay(alignment: .topLeading) {
+                    if let timer = viewModel.formattedRemainingTime {
+                        CountdownBadge(value: timer, locale: locale)
+                            .offset(x: 8, y: 0)
+                    }
+                }
             }
             .transition(.opacity.combined(with: .scale(scale: 0.96)))
             .featureScreenStyle()

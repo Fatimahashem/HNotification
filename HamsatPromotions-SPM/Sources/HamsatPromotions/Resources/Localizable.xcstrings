@@ -1,6 +1,18 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "25% extra when you buy Hamsat credit" : {
+
+    },
+    "Buy 20 minutes for only $5" : {
+
+    },
+    "Choose the package you want and continue your call!" : {
+
+    },
+    "Close" : {
+
+    },
     "common.close" : {
       "comment" : "Closes a modal.",
       "localizations" : {
@@ -34,6 +46,24 @@
           }
         }
       }
+    },
+    "Don't miss out—recharge now" : {
+
+    },
+    "During your call, tap the button shown above" : {
+
+    },
+    "Enable Notifications" : {
+
+    },
+    "How to use" : {
+
+    },
+    "Later" : {
+
+    },
+    "New feature" : {
+
     },
     "onboarding.notifications.body" : {
       "comment" : "Explanation shown before requesting notification permission.",
@@ -82,6 +112,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enable Notifications"
+          }
+        }
+      }
+    },
+    "Page %lld of %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Page %1$lld of %2$lld"
           }
         }
       }
@@ -170,6 +210,15 @@
           }
         }
       }
+    },
+    "Time left: %@" : {
+
+    },
+    "Time remaining: %@" : {
+
+    },
+    "Turn on your notifications so you can stay up to date at all times" : {
+
     },
     "tutorial.announcement.body" : {
       "comment" : "Announcement that balance can be recharged during a call.",
@@ -272,6 +321,9 @@
           }
         }
       }
+    },
+    "You can now recharge your balance during a call" : {
+
     }
   },
   "version" : "1.0"
