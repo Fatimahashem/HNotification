@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "HamsatPromotions",
     defaultLocalization: "ar",
-    platforms: [.iOS(.v16), .macOS(.v13)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(name: "HamsatPromotions", targets: ["HamsatPromotions"])
     ],

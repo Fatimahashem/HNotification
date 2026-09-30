@@ -26,7 +26,7 @@ public struct NotificationOnboardingView: View {
                 
                 VStack(spacing: 20) {
                     Text(
-                        locale.localizedResource(
+                        locale.localizedString(
                             "onboarding.notifications.title",
                             defaultValue: "Enable Notifications"
                         )
@@ -34,7 +34,7 @@ public struct NotificationOnboardingView: View {
                     .font(Theme.AppFont.dinarBold(size: 35).font)
                         .foregroundStyle(Theme.Colors.primaryAccent)
                     Text(
-                        locale.localizedResource(
+                        locale.localizedString(
                             "onboarding.notifications.body",
                             defaultValue: "Turn on your notifications so you can stay up to date at all times"
                         )
@@ -46,7 +46,7 @@ public struct NotificationOnboardingView: View {
 
                 Button(action: onEnable) {
                     Text(
-                        locale.localizedResource(
+                        locale.localizedString(
                             "onboarding.notifications.enable",
                             defaultValue: "Enable Notifications"
                         )
@@ -57,7 +57,7 @@ public struct NotificationOnboardingView: View {
 
                 Button(action: onLater) {
                     Text(
-                        locale.localizedResource(
+                        locale.localizedString(
                             "common.later",
                             defaultValue: "Later"
                         )

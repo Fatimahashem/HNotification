@@ -25,7 +25,7 @@ public struct PageIndicator: View {
         }
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(
-            locale.localizedResource(
+            locale.localizedString(
                 "tutorial.page.accessibility",
                 defaultValue: "Page \(selectedIndex + 1) of \(count)"
             )

@@ -19,7 +19,7 @@ public struct ModalCloseButton: View {
                 .clipShape(Circle())
         }
         .accessibilityLabel(
-            locale.localizedResource(
+            locale.localizedString(
                 "common.close",
                 defaultValue: "Close"
             )

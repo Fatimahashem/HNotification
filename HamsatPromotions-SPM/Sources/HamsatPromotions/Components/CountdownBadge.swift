@@ -11,7 +11,7 @@ public struct CountdownBadge: View {
 
     public var body: some View {
         Text(
-            locale.localizedResource(
+            locale.localizedString(
                 "promotion.countdown",
                 defaultValue: "Time left: \(value)"
             )
@@ -25,7 +25,7 @@ public struct CountdownBadge: View {
                 .fill(Theme.Colors.promotionalAccent)
         }
         .accessibilityLabel(
-            locale.localizedResource(
+            locale.localizedString(
                 "promotion.countdown.accessibility",
                 defaultValue: "Time remaining: \(value)"
             )
