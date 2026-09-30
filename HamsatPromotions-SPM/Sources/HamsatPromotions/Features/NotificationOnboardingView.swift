@@ -21,7 +21,6 @@ public struct NotificationOnboardingView: View {
                 .ignoresSafeArea()
 
             VStack(spacing: 20) {
-                Spacer(minLength: 10)
                 FeatureImage("NotificationPhone")
                     .frame(maxWidth: 180, maxHeight: 300)
                 
@@ -66,8 +65,8 @@ public struct NotificationOnboardingView: View {
                     .font(Theme.AppFont.button)
                     .foregroundStyle(Theme.Colors.secondaryText)
                     .padding(32)
-                Spacer(minLength: 24)
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         }
         .featureScreenStyle()
         .environment(\.locale, locale)
