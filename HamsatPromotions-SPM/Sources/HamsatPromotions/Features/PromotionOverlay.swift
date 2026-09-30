@@ -55,10 +55,9 @@ public struct PromotionOverlay: View {
 #Preview("Promotion") {
     ZStack {
         Color.gray
-
         PromotionOverlay(
             viewModel: PromotionViewModel(
-                promotion: .extraCredit(
+                promotion: .fiveDollarOffer(
                     deadline: Date().addingTimeInterval(12_000),
                     locale: Locale(identifier: "ar")
                 )
