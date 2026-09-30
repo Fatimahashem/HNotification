@@ -24,9 +24,10 @@ public struct PromotionOverlay: View {
 
                 VStack(spacing: 16) {
                     ModalCard {
-                        VStack(spacing: 16) {
+                        VStack(spacing: 8) {
                             FeatureImage(promotion.artwork.rawValue)
-                                .frame(height: 250)
+                                .frame(height: 200)
+                                .padding(16)
                             Text(promotion.title)
                                 .font(Theme.AppFont.dinarBold(size: 35).font)
                                 .foregroundStyle(Theme.Colors.promotionalAccent)
@@ -59,7 +60,8 @@ public struct PromotionOverlay: View {
         PromotionOverlay(
             viewModel: PromotionViewModel(
                 promotion: .extraCredit(
-                    deadline: Date().addingTimeInterval(12_000)
+                    deadline: Date().addingTimeInterval(12_000),
+                    locale: Locale(identifier: "ar")
                 )
             ),
             locale: Locale(identifier: "ar")

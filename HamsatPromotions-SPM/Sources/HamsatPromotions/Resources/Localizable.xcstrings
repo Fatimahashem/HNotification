@@ -4,113 +4,273 @@
     "common.close" : {
       "comment" : "Closes a modal.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "إغلاق" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Close" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إغلاق"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close"
+          }
+        }
       }
     },
     "common.later" : {
       "comment" : "Defers an optional action.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "في وقت لاحق" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Later" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "في وقت لاحق"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Later"
+          }
+        }
       }
     },
     "onboarding.notifications.body" : {
       "comment" : "Explanation shown before requesting notification permission.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "قم بتشغيل الإشعارات الخاصة بك حتى تتمكن من البقاء على اطلاع دائم في جميع الأوقات" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Turn on your notifications so you can stay up to date at all times" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قم بتشغيل الإشعارات الخاصة بك حتى تتمكن من البقاء على اطلاع دائم في جميع الأوقات"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn on your notifications so you can stay up to date at all times"
+          }
+        }
       }
     },
     "onboarding.notifications.enable" : {
       "comment" : "Button that begins the notification permission flow.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "تفعيل الإشعارات" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Enable Notifications" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تفعيل الإشعارات"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enable Notifications"
+          }
+        }
       }
     },
     "onboarding.notifications.title" : {
       "comment" : "Title on the notification permission onboarding screen.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "تفعيل الإشعارات" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Enable Notifications" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تفعيل الإشعارات"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enable Notifications"
+          }
+        }
       }
     },
     "promotion.countdown" : {
       "comment" : "Visual countdown badge. The argument is an HH:mm:ss duration.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "تبقّى %1$@" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Time left: %1$@" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تبقّى %1$@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time left: %1$@"
+          }
+        }
       }
     },
     "promotion.countdown.accessibility" : {
       "comment" : "VoiceOver label for the promotion countdown.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "الوقت المتبقي: %1$@" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Time remaining: %1$@" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوقت المتبقي: %1$@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time remaining: %1$@"
+          }
+        }
       }
     },
     "promotion.extra_credit.title" : {
       "comment" : "Headline for a bonus-credit promotion.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "٢٥٪ إضافية عند شرائك همسات" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "25% extra when you buy Hamsat credit" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٢٥٪ إضافية \nعند شرائك همسات"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "25% extra when you buy Hamsat credit"
+          }
+        }
       }
     },
     "promotion.five_dollar.title" : {
       "comment" : "Headline for a discounted minutes promotion.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "اشترِ ٢٠ دقيقة بقيمة ٥$ فقط" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Buy 20 minutes for only $5" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشترِ ٢٠ دقيقة بقيمة ٥$ فقط"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buy 20 minutes for only $5"
+          }
+        }
       }
     },
     "promotion.message" : {
       "comment" : "Call to action below a promotion headline.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "لا تفوّت الفرصة، اشحن الآن" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Don't miss out—recharge now" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا تفوّت الفرصة، اشحن الآن"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't miss out—recharge now"
+          }
+        }
       }
     },
     "tutorial.announcement.body" : {
       "comment" : "Announcement that balance can be recharged during a call.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "يمكنك الآن إعادة شحن رصيدك أثناء المكالمة" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "You can now recharge your balance during a call" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يمكنك الآن إعادة شحن رصيدك أثناء المكالمة"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can now recharge your balance during a call"
+          }
+        }
       }
     },
     "tutorial.announcement.title" : {
       "comment" : "Title announcing a newly available feature.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "ميزة جديدة" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "New feature" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ميزة جديدة"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New feature"
+          }
+        }
       }
     },
     "tutorial.control.body" : {
       "comment" : "Explains where to tap during a call.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "أثناء مكالمتك اضغط على الصورة الموضحة أعلاه" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "During your call, tap the button shown above" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أثناء مكالمتك اضغط على الصورة الموضحة أعلاه"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "During your call, tap the button shown above"
+          }
+        }
       }
     },
     "tutorial.how_to.title" : {
       "comment" : "Title for tutorial instruction pages.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "كيفية الاستخدام" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "How to use" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كيفية الاستخدام"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How to use"
+          }
+        }
       }
     },
     "tutorial.packages.body" : {
       "comment" : "Explains selecting an in-call minutes package.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "اختر الباقة التي تريدها وواصل مكالمتك!" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Choose the package you want and continue your call!" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر الباقة التي تريدها وواصل مكالمتك!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose the package you want and continue your call!"
+          }
+        }
       }
     },
     "tutorial.page.accessibility" : {
       "comment" : "VoiceOver position within the tutorial pages.",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "الصفحة %1$lld من %2$lld" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Page %1$lld of %2$lld" } }
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصفحة %1$lld من %2$lld"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Page %1$lld of %2$lld"
+          }
+        }
       }
     }
   },
