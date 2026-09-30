@@ -50,10 +50,10 @@ public struct TutorialOverlay: View {
                     FeatureImage(page.artwork.rawValue)
                         .frame(height: 220)
                     Text(page.title)
-                        .font(Theme.AppFont.modalTitle)
+                        .font(Theme.AppFont.dinarBold(size: 35).font)
                         .foregroundStyle(Theme.Colors.promotionalAccent)
                     Text(page.message)
-                        .font(Theme.AppFont.body)
+                        .font(Theme.AppFont.dinarMedium(size: 16).font)
                         .frame(minHeight: 48)
                 }
                 .tag(index)

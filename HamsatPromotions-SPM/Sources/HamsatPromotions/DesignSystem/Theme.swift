@@ -23,33 +23,49 @@ public enum Theme {
     }
 
     public enum AppFont {
-        public static let familyName = "GE Dinar One"
-
-        public static let hero = font(size: 34, relativeTo: .largeTitle, weight: .bold)
-        public static let modalTitle = font(size: 31, relativeTo: .title, weight: .bold)
-        public static let body = font(size: 17, relativeTo: .body, weight: .medium)
-        public static let button = font(size: 20, relativeTo: .title3, weight: .semibold)
-        public static let timer = font(size: 16, relativeTo: .callout, weight: .bold)
-
-        public static func font(
-            size: CGFloat,
-            relativeTo textStyle: Font.TextStyle,
-            weight: Font.Weight = .regular
-        ) -> Font {
-            guard isFontAvailable else {
-                return .system(size: size, weight: weight)
+        case dinarMedium(size: CGFloat)
+        case dinarBold(size: CGFloat)
+        
+        public var font: Font {
+            switch self {
+            case .dinarMedium(let size):
+                FontLoader.shared.registerFontIfNeeded(fileName: "GEDinarOneMedium.ttf")
+                return Font.custom("GE Dinar One Medium", size: size)
+            case .dinarBold(let size):
+                FontLoader.shared.registerFontIfNeeded(fileName: "alfont_com_GE-Dinar-One-Bold.otf")
+                return Font.custom("GE Dinar One Bold", size: size)
             }
-            return .custom(familyName, size: size, relativeTo: textStyle).weight(weight)
         }
-
-        private static var isFontAvailable: Bool {
-            #if canImport(UIKit)
-            UIFont(name: familyName, size: 17) != nil
-            #elseif canImport(AppKit)
-            NSFont(name: familyName, size: 17) != nil
-            #else
-            false
-            #endif
+    }
+    
+    final class FontLoader: @unchecked Sendable {
+        static let shared = FontLoader()
+        private var loadedFonts = Set<String>()
+        private let queue = DispatchQueue(label: "FontLoaderQueue")
+        
+        private init() {}
+        
+        func registerFontIfNeeded(fileName: String) {
+            queue.sync {
+                guard !loadedFonts.contains(fileName) else { return }
+                
+                guard let url = Bundle.module.url(forResource: fileName, withExtension: nil) else {
+                  
+                    return
+                }
+                
+                guard let dataProvider = CGDataProvider(url: url as CFURL),
+                      let cgFont = CGFont(dataProvider) else {
+                    return
+                }
+                
+                var error: Unmanaged<CFError>?
+                if CTFontManagerRegisterGraphicsFont(cgFont, &error) {
+                    loadedFonts.insert(fileName)
+                } else if let err = error?.takeUnretainedValue() {
+                    _ = CFErrorCopyDescription(err) as String
+                }
+            }
         }
     }
 }

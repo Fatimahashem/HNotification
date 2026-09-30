@@ -28,10 +28,10 @@ public struct PromotionOverlay: View {
                             FeatureImage(promotion.artwork.rawValue)
                                 .frame(height: 250)
                             Text(promotion.title)
-                                .font(Theme.AppFont.modalTitle)
+                                .font(Theme.AppFont.dinarBold(size: 35).font)
                                 .foregroundStyle(Theme.Colors.promotionalAccent)
                             Text(promotion.message)
-                                .font(Theme.AppFont.body)
+                                .font(Theme.AppFont.dinarMedium(size: 16).font)
                         }
                         .onTapGesture { onSelect(promotion) }
                         .overlay(alignment: .topLeading) {
@@ -50,5 +50,19 @@ public struct PromotionOverlay: View {
             .featureScreenStyle()
             .environment(\.locale, locale)
         }
+    }
+}
+#Preview("Promotion") {
+    ZStack {
+        Color.gray
+
+        PromotionOverlay(
+            viewModel: PromotionViewModel(
+                promotion: .extraCredit(
+                    deadline: Date().addingTimeInterval(12_000)
+                )
+            ),
+            locale: Locale(identifier: "ar")
+        )
     }
 }

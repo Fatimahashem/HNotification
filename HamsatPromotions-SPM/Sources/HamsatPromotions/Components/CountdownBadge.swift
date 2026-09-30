@@ -16,7 +16,7 @@ public struct CountdownBadge: View {
                 defaultValue: "Time left: \(value)"
             )
         )
-            .font(Theme.AppFont.timer)
+        .font(Theme.AppFont.dinarMedium(size: 15).font)
             .foregroundStyle(Theme.Colors.surface)
             .padding(.horizontal, 16)
             .frame(height: 34)

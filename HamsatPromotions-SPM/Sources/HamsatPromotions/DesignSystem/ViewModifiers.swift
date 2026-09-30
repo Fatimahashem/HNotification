@@ -19,7 +19,7 @@ public struct PrimaryButtonModifier: ViewModifier {
 
     public func body(content: Content) -> some View {
         content
-            .font(Theme.AppFont.button)
+            .font(Theme.AppFont.dinarMedium(size: 22).font)
             .foregroundStyle(Theme.Colors.surface)
             .frame(maxWidth: .infinity, minHeight: 54)
             .background(Theme.Colors.promotionalAccent.opacity(isEnabled ? 1 : 0.45))

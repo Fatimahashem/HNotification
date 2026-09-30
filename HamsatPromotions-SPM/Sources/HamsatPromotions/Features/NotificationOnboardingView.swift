@@ -31,7 +31,7 @@ public struct NotificationOnboardingView: View {
                             defaultValue: "Enable Notifications"
                         )
                     )
-                        .font(Theme.AppFont.hero)
+                    .font(Theme.AppFont.dinarBold(size: 35).font)
                         .foregroundStyle(Theme.Colors.primaryAccent)
                     Text(
                         locale.localizedResource(
@@ -39,8 +39,9 @@ public struct NotificationOnboardingView: View {
                             defaultValue: "Turn on your notifications so you can stay up to date at all times"
                         )
                     )
-                        .font(Theme.AppFont.body)
+                    .font(Theme.AppFont.dinarMedium(size: 15).font)
                 }
+                .frame(maxWidth: 260)
                 .padding(.bottom, 10)
 
                 Button(action: onEnable) {
@@ -62,7 +63,7 @@ public struct NotificationOnboardingView: View {
                         )
                     )
                 }
-                    .font(Theme.AppFont.button)
+                .font(Theme.AppFont.dinarMedium(size: 22).font)
                     .foregroundStyle(Theme.Colors.secondaryText)
                     .padding(32)
             }
